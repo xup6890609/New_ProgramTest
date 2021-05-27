@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f65e9f4efe732e64584148c42cadb604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 599
+  speed: 1000
   groundPoint: {x: -0.2, y: -1.05, z: 0}
   groundLength: 0.2
   jump: 500
@@ -476,6 +476,7 @@ MonoBehaviour:
   player: {fileID: 154089497}
   mount: {fileID: 1574121424}
   PlayerAnimator: {fileID: 154089498}
+  parent: {fileID: 0}
 --- !u!1 &161005339
 GameObject:
   m_ObjectHideFlags: 0
@@ -14921,14 +14922,14 @@ GameObject:
   - component: {fileID: 1574121425}
   - component: {fileID: 1574121429}
   - component: {fileID: 1574121428}
-  - component: {fileID: 1574121431}
+  - component: {fileID: 1574121430}
   m_Layer: 0
   m_Name: "\u9A0E\u58EB"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1574121425
 Animator:
   serializedVersion: 3
@@ -14937,7 +14938,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574121424}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d6dd0f0141b6c6c4389e93c68684ee28, type: 2}
   m_CullingMode: 0
@@ -15032,7 +15033,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &1574121429
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -15049,7 +15050,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.4675, y: 1.7675}
   m_Direction: 0
---- !u!114 &1574121431
+--- !u!114 &1574121430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15058,10 +15059,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1574121424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f65e9f4efe732e64584148c42cadb604, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a5acc62eb09fe046bd7d30299b38e85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 1000
   groundPoint: {x: 0, y: 0, z: 0}
   groundLength: 0.1
   jump: 500

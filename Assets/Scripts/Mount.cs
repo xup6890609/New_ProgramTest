@@ -31,7 +31,7 @@ public class Mount : MonoBehaviour
     {
         PlayerAnimator.SetBool("滑行", true);
         StartCoroutine(Mounting());
-        player.GetComponent<CharacterMovement2D>().enabled = false;
+        player.GetComponent<CharacterMovement2D>().enabled = true;
         mount.GetComponent<Knight>().enabled = true;
     }
 
@@ -49,7 +49,7 @@ public class Mount : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         mount.SetActive(true);
         mount.GetComponent<Knight>().enabled = true;
-        player.GetComponent<CharacterMovement2D>().enabled = false;
+        player.GetComponent<CharacterMovement2D>().enabled = true;
         mount.transform.position = player.transform.position;
         mount.transform.rotation = player.transform.rotation;
         SetParent(mount);
